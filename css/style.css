@@ -28,6 +28,7 @@ a{
 body{
 	background: #fafafa;
 	color: #646463;
+	font-size: 1em;
 	font-family: "soberana_sanslight";
 }
 footer{	
@@ -43,14 +44,6 @@ img{
 label{
 	font-family: "soberana_titularregular";
 }
-.line {
-   	border-bottom: 1px solid #DEDEDE;
-    border-top: 1px solid #DEDEDE;
-    float: left;    
-    height: 1px;
-    margin-top: 38px;
-    width: 33%;
-}
 #dependencia{	
 	border-bottom: medium double #DEDEDE;
     border-top: medium double #DEDEDE;
@@ -58,12 +51,16 @@ label{
     margin: 50px 0;
     text-align: center;
 }
+#informacion{
+	text-align: center;
+}
 #logos{
 	text-align: center;
 }
 #logos label{
-	font-size: 16px;
+	font-size: 18px;
 	margin: 0 10px;
+	padding: 10px 0;
 }
 #logo_sep{	
 	display: block;
@@ -82,12 +79,29 @@ label{
 #menu ul li{
 	border-right: solid 1px #DEDEDE;
 	display: inline-block;
-	font-size: 13px;	
+	font-size: 0.8em;
 	list-style: none;
 	padding: 0 5px;
 	text-transform: uppercase;
 }
 #menu ul li a:hover{
+	color: #BA2025;
+	text-decoration: underline;
+}
+#menu_principal{
+	background: linear-gradient(to right, #FAFAFA 0%, #EAEAEA 14%, #EAEAEA 86%, #FAFAFA 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #646463;
+    margin: 0 auto;
+    text-align: center;
+}
+#menu_principal ul li{
+	display: inline-block;
+	font-size: 16px;
+	list-style: none;	
+	padding: 0 7px;
+	text-transform: uppercase;
+}
+#menu_principal ul li a:hover{
 	color: #BA2025;
 }
 #principal{
@@ -96,10 +110,44 @@ label{
 }
 #pie{	
 	display: block;
+	font-size: 14px;
 	height: 50px;
 	width: 100%;
 }
 #pie p{
 	text-align: center;
 	color: #808080;
+}
+#shadowUp, #shadowDown {
+    height: 17px;
+    width: 960px;
+    z-index: 10;
+}
+#shadowUp{
+	background: url("../img/shadow_up.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	margin-bottom:2px;
+}
+#shadowDown{
+	background: url("../img/shadow_down.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    margin-top: 2px;
+
+}
+.articulo{
+	display: inline-block;
+	max-width: 20%;
+}
+.articulo h1{
+	color: #A5273F;
+	font-size: 18px;
+}
+.articulo a p:hover{
+	color: #497F43;
+}
+.line {
+   	border-bottom: 1px solid #DEDEDE;
+    border-top: 1px solid #DEDEDE;
+    float: left;    
+    height: 1px;
+    margin-top: 38px;
+    width: 33%;
 }
