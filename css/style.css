@@ -52,6 +52,7 @@ label{
     text-align: center;
 }
 #informacion{
+	margin: 60px 0;
 	text-align: center;
 }
 #logos{
@@ -60,13 +61,25 @@ label{
 #logos label{
 	font-size: 18px;
 	margin: 0 10px;
-	padding: 10px 0;
+	padding: 10px 0;	
 }
 #logo_sep{	
 	display: block;
 	margin: 0 auto;
 	height: 80px;
 	width: 100%;
+}
+#logos a img{
+	transform:rotateY(0deg);
+   transition-duration: 2s;
+   -webkit-transform:rotateY(0deg);
+   -webkit-transition-duration: 2s;
+}
+#logos a img:hover{	
+	transform:rotateY(360deg);
+   transition-duration: 2s;
+   -webkit-transform:rotateY(360deg);
+   -webkit-transition-duration: 2s;
 }
 #menu{	
 	float: right;
@@ -92,7 +105,7 @@ label{
 	background: linear-gradient(to right, #FAFAFA 0%, #EAEAEA 14%, #EAEAEA 86%, #FAFAFA 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
     color: #646463;
     margin: 0 auto;
-    text-align: center;
+    text-align: center;    
 }
 #menu_principal ul li{
 	display: inline-block;
@@ -101,12 +114,12 @@ label{
 	padding: 0 7px;
 	text-transform: uppercase;
 }
-#menu_principal ul li a:hover{
-	color: #BA2025;
+#menu_principal ul li a:hover{	
+	color: #BA2025;	
 }
 #principal{
 	margin: 20px auto;	
-	max-width: 960px;
+	max-width: 960px;	
 }
 #pie{	
 	display: block;
@@ -126,11 +139,12 @@ label{
 #shadowUp{
 	background: url("../img/shadow_up.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 	margin-bottom:2px;
+	max-width: 100%;
 }
 #shadowDown{
 	background: url("../img/shadow_down.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     margin-top: 2px;
-
+    max-width: 100%;
 }
 .articulo{
 	display: inline-block;
@@ -140,7 +154,7 @@ label{
 	color: #A5273F;
 	font-size: 18px;
 }
-.articulo a p:hover{
+.articulo a:hover{
 	color: #497F43;
 }
 .line {
@@ -150,4 +164,21 @@ label{
     height: 1px;
     margin-top: 38px;
     width: 33%;
+}
+.sub-menu{
+	-webkit-box-shadow: 0 8px 10px -6px black;
+	-moz-box-shadow: 0 8px 10px -6px black;
+	box-shadow: 0 8px 10px -6px black;
+	display: none;
+	margin-top: 5px;
+	position: absolute;
+	z-index:9999;	
+}
+.sub-menu li{	
+	border-left: 2px solid #497F43;	
+	border-bottom: 1px solid #fafafa;
+	background: rgba(211,211,211, 0.4);
+	display: block !important;
+	height: 25px;
+	text-align: left;
 }

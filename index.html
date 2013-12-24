@@ -10,6 +10,16 @@
 	<link rel="stylesheet" href="css/light/light.css">
 	<script src="js/jquery-1.10.2.min.js"></script>
 	<script src="js/jquery.nivo.slider.pack.js"></script>
+	<script>
+	$(document).on('ready', function(){		
+		$('.mouseOver').on('mouseenter', function(){
+				$(this).find('ul').stop().slideDown('fast');
+		});
+		$('.mouseOver').on('mouseleave', function(){
+				$(this).find('ul').stop().slideUp('fast');
+		});	
+	})
+	</script>	
 </head>
 <body>
 	<section id="principal">
@@ -25,15 +35,28 @@
 				<a href="#"><img src="img/logo_SEP.png" alt="SEP"></a>
 				<label>INSTITUTO TECNOLOGICO DE IZTAPALAPA II</label>
 				<a href="#"><img src="img/logo_DGEST.png" alt="DGEST"></a>
-				<a href="#"><img src="img/logoITI_CH.png" alt="ITI2"></a>
+				<a href="#"><img src="img/logoITI_CH.png" alt="ITI2" class="logoTec"></a>
 			</div><br>
 			<div id="shadowUp"></div>
 			<nav id="menu_principal">
 				<ul>
 					<li><a href="#">Nuestra institucion</a></li>
-					<li><a href="#">Oferta edicativa</a></li>
-					<li><a href="#">Aspirantes</a></li>
-					<li><a href="#">Estudiantes</a></li>
+					<li><a href="#">Oferta edicativa</a></li>					
+					<li class="mouseOver"><a href="#">Aspirantes</a>
+						<ul class="sub-menu">				            
+				            <li><a href="#">Inscripcion</a></li>
+				            <li><a href="#">Cursos</a></li>
+				            <li><a href="#">Mas</a></li>
+				        </ul>
+					</li>
+					<li class="mouseOver"><a href="#">Estudiantes</a>
+						<ul class="sub-menu">				            
+				            <li><a href="#">Reinscripcion</a></li>
+				            <li><a href="#">Servicio Social</a></li>
+				            <li><a href="#">Practicas Profesionales</a></li>
+				            <li><a href="#">Reglamento</a></li>
+				        </ul>
+					</li>
 					<li><a href="#">Lineamientos</a></li>
 				</ul>
 			</nav>
